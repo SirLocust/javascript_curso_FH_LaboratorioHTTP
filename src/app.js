@@ -1,3 +1,4 @@
-import { getJoke} from './js/http-provider'
+import './app.css';
+import init from './js/chistes-page';
 
-getJoke().then(console.log)
+init();
