@@ -1,6 +1,5 @@
 import './app.css';
-import { getUsers } from './js/http-provider';
-// import init from './js/chistes-page';
-import init from './js/users-page';
-getUsers().then(console.table);
-init();
+
+import * as CRUD from './js/CRUD-provider';
+
+CRUD.getUser(1).then(console.log);
