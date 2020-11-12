@@ -1,4 +1,6 @@
 import './app.css';
-import init from './js/chistes-page';
-
+import { getUsers } from './js/http-provider';
+// import init from './js/chistes-page';
+import init from './js/users-page';
+getUsers().then(console.table);
 init();
