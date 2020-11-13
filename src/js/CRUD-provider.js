@@ -30,4 +30,11 @@ const updateUser = async ({ id, name, job }) => {
   return resp.json();
 };
 
-export { getUser, createUser, updateUser };
+const deleteUser = async (id) => {
+  const resp = await fetch(`${crudUrl}/${id}`, {
+    method: 'DELETE',
+  });
+  return resp.ok;
+};
+
+export { getUser, createUser, updateUser, deleteUser };

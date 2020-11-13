@@ -7,8 +7,10 @@ import * as CRUD from './js/CRUD-provider';
 //   name: 'Fernando',
 //   job: 'Carpintero',
 // }).then(console.log);
-CRUD.updateUser({
-  id: 3,
-  name: 'juan',
-  job: 'cocinero',
-}).then(console.log);
+// CRUD.updateUser({
+//   id: 3,
+//   name: 'juan',
+//   job: 'cocinero',
+// }).then(console.log);
+
+CRUD.deleteUser(2).then(console.log);
